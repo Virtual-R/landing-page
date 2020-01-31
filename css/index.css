@@ -137,7 +137,7 @@ body {
   font-family: 'Overpass', sans-serif;
   background: url(bg1.jpg) no-repeat;
   background-size: cover;
-  height: calc(100vh - 80px);
+  height: 100vh;
 }
 nav {
   background: #0364adee;
@@ -185,15 +185,15 @@ nav ul li a:hover {
 #check {
   display: none;
 }
-@media (max-width: 952px) {
-  label.logo {
-    font-size: 30px;
-    padding-left: 50px;
-  }
-  nav ul li a {
-    font-size: 16px;
-  }
-}
+/*@media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }*/
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
@@ -256,10 +256,17 @@ footer a:hover {
 }
 section {
   color: white;
+  display: flex;
+  justify-content: center;
 }
 section h1 {
   font-size: 3rem;
 }
 section h2 {
   font-size: 1.7rem;
+}
+section div.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
