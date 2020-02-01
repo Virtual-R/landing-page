@@ -9,6 +9,13 @@ font-family: 'Poppins', sans-serif;
 MENU
 font-family: 'Bebas Neue', cursive;
 */
+/* RGB VALUES 
+mermaidblue - 64 209 253
+lilac - 120 149 205
+papaya - 244 156 120 
+*/
+
+
 * {
   margin: 0;
   padding: 0;
@@ -31,36 +38,92 @@ html {
 .header .navigation .nav-item a {
   text-decoration: none;
   color: white;
-  font-size: 24px;
+  font-size: 3.2rem;
   font-family: 'Bebas Neue', cursive;
+  animation-name: anchor-colors;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+/* ANCHOR KEYFRAME ANIMATION */
+@keyframes anchor-colors {
+  50% {
+    color: #40d1fd;
+  }
+  100% {
+    color: #f49c78;
+  }
 }
 .body-container {
   margin-top: 1%;
   width: 100%;
   height: 1000px;
 }
-.body-container .top-section {
-  width: 100%;
-  height: 43%;
-  background-image: url("/img/shadow-man.jpg");
-  background-size: 745.5px 419px;
-  /* 1489 838 ORIGINAL SIZE*/
-  background-repeat: no-repeat;
-  border: red 1px solid;
+.body-container .floating-div-container {
+  display: flex;
+  flex-direction: column;
+  /* 1500px height before */
+  height: 175vh;
+  margin: 5%;
+}
+.body-container .floating-div-container .floating-div-row {
+  height: 33.3%;
+  border: 1px red solid;
   display: flex;
   flex-direction: row;
 }
-.body-container .top-section .top-left {
+.body-container .floating-div-container .image-container {
+  width: 20%;
   border: 1px red solid;
-  width: 35%;
-  background-color: transparent;
+  /* padding-top: 5%; */
+  position: relative;
+  display: flex;
 }
-.body-container .top-section .top-right {
+.body-container .floating-div-container .image-container #pushing-right {
   border: 1px red solid;
-  width: 65%;
+  align-items: center;
+  width: 100%;
+}
+.body-container .floating-div-container .floating-div {
+  width: 80%;
+  border: 1px red solid;
+}
+.body-container .floating-div-container #floatingdiv1 {
+  background-color: #40d1fd;
+}
+.body-container .floating-div-container #floatingdiv2 {
+  background-color: #7895cd;
+}
+.body-container .floating-div-container #floatingdiv3 {
+  background-color: #f49c78;
+}
+.body-container .bottom-section {
+  width: 100%;
+  height: 43%;
+  background-size: 745.5px 419px;
+  /* 1489 838 ORIGINAL SIZE*/
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.body-container .bottom-section .bottom-container {
+  width: 70%;
   flex-direction: column;
+  background-image: url("/img/sony-girl.jpg");
+  background-size: 930.717px 450.5px;
 }
-.body-container .top-section .top-right .three-way {
+.body-container .bottom-section .bottom-container .three-way {
   height: 33.3%;
-  border: 1px red solid;
+}
+.body-container .bottom-section .bottom-container #threeway-top {
+  background-color: #40d1fd;
+  opacity: 0.85;
+}
+.body-container .bottom-section .bottom-container #threeway-middle {
+  background-color: #7895cd;
+  opacity: 0.85;
+}
+.body-container .bottom-section .bottom-container #threeway-bottom {
+  background-color: #f49c78;
+  opacity: 0.85;
 }
