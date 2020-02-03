@@ -135,8 +135,7 @@ table {
 }
 body {
   font-family: 'Overpass', sans-serif;
-  background: url(bg1.jpg) no-repeat;
-  background-size: cover;
+  background-color: black;
   height: 100vh;
 }
 nav {
@@ -185,15 +184,15 @@ nav ul li a:hover {
 #check {
   display: none;
 }
-/*@media (max-width: 952px){
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }*/
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
@@ -229,6 +228,7 @@ section {
   background: url(bg1.jpg) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
+  width: 98vw;
 }
 footer {
   background: #0364adee;
@@ -260,16 +260,36 @@ section {
   justify-content: center;
 }
 section h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding-left: 5%;
+  text-shadow: 4px 4px #000000;
 }
 section h2 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
+  padding-left: 5%;
+  text-shadow: 4px 4px #000000;
+}
+section div.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1%;
 }
 section div.wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: auto;
+  background: #0364adee;
+  border-radius: 5px;
+  min-width: 20.5rem;
+  max-width: 30.5rem;
+  height: 18vh;
+  width: 30vw;
+}
+section div.wrapper a {
+  align-self: center;
+  margin-top: 5%;
 }
 .btn {
   width: 12.5rem;
@@ -277,12 +297,13 @@ section div.wrapper {
   font-weight: bold;
   background: none;
   border: 4px solid;
-  color: #0364adee;
+  color: white;
   cursor: pointer;
   font-size: 16px;
   position: relative;
-  padding-top: 5%;
-  padding-left: 20%;
+  padding-top: 15px;
+  padding-left: 40px;
+  text-shadow: 4px 4px #000000;
 }
 .btn::before,
 .btn::after {
@@ -310,8 +331,15 @@ section div.wrapper {
 }
 div.staff {
   display: grid;
-  grid-template-columns: 35% 35% 35%;
+  grid-template-columns: 40% 40% 40%;
   grid-gap: 1em;
+}
+@media (max-width: 858px) {
+  div.staff {
+    grid-template-columns: none;
+    display: flex;
+    flex-direction: column;
+  }
 }
 div.staff .staff-wrapper {
   background: #0364adee;
@@ -322,14 +350,30 @@ div.staff .staff-wrapper {
   font-size: 1.4rem;
   margin: 2%;
   padding: 1%;
-  height: 23vh;
+  height: 24vh;
   box-shadow: 2px 2px;
+}
+@media (max-width: 858px) {
+  div.staff .staff-wrapper {
+    font-size: 1.25rem;
+    width: 22rem;
+  }
 }
 div.staff .staff-wrapper img {
   border-radius: 50%;
   max-width: 220px;
   margin-bottom: 2%;
-  margin-top: 2%;
+  margin-top: 4%;
   border: 1px solid white;
   box-shadow: 2px 2px;
+}
+section.staff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 858px) {
+  section.staff {
+    height: auto;
+  }
 }
