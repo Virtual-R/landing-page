@@ -290,7 +290,7 @@ section div.wrapper {
 }
 @media (max-width: 858px) {
   section div.wrapper {
-    height: 20vh;
+    height: fit-content;
   }
 }
 section div.wrapper a {
