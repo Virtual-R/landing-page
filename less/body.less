@@ -8,35 +8,56 @@
         flex-direction: column;
         /* 1500px height before */
         height: 175vh;
-        margin: 5%;
-
-        
+        margin: 0% 5%;
+                
         .floating-div-row {
             height: 33.3%;
-            border: 1px red solid;
             display: flex;
             flex-direction: row;
         }
 
         .image-container {
             width: 20%;            
-            border: 1px red solid; 
             /* padding-top: 5%; */
             position: relative;
             display: flex;  
            
             
-            #pushing-right {                
-                border: 1px red solid;
-                align-items: center; 
-                width: 100%; 
+         #pushing-right {                
+            align-items: center; 
+            width: 100%; 
+         }
+         #pushing-left {                
+            align-items: center; 
+            width: 100%; 
             }
         }
 
         .floating-div {
             width: 80%;
-            border: 1px red solid;
+            padding: 5%;
+
+            .subheading {
+                font-size: 7rem;
+                background-color: transparent;
+                font-family: @bangers;
+                text-align: center;
+
+            }
+
+            .body-p {
+                font-size: 2.8rem;
+                background-color: transparent;
+                font-family: @poppins;
+                padding-top: 2%;
+            }
         }
+            .sixr-logo {
+              font-weight: 900; 
+              animation-name: logo-animation; 
+              animation-duration: 5s;
+              animation-iteration-count: infinite;
+            }
 
         #floatingdiv1 {
             background-color: @mermaidblue;
@@ -54,38 +75,16 @@
 
     }
 
-    .bottom-section {
-        width: 100%;
-        height: 43%;        
-        background-size: 745.5px 419px; /* 1489 838 ORIGINAL SIZE*/
-        background-repeat: no-repeat;        
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;      
-        
+    
+}
 
-        .bottom-container {           
-            width: 70%;
-            flex-direction: column;
-            background-image: url("/img/sony-girl.jpg");
-            background-size: 930.717px 450.5px;
-           
-            .three-way {
-                height: 33.3%;
-            }
+/* KEY FRAMES */ 
 
-            #threeway-top {
-                background-color: @mermaidblue;
-                opacity: 0.85;
-            }
-            #threeway-middle {
-                background-color: @lilac;
-                opacity: 0.85;
-            }
-            #threeway-bottom {
-                background-color: @papaya;
-                opacity: 0.85;
-            }
-        }
+@keyframes logo-animation {
+    50% {
+        color: red;
+    }
+    100% {
+        color: black;
     }
 }

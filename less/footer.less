@@ -1,0 +1,51 @@
+.footer {
+    display: flex;
+    margin: 5%;
+    border-top: 2px solid @mermaidblue;
+    flex-direction: column;
+    height: 125px;
+
+    .app-button {
+        height: 80%;
+        justify-content: center;
+        display: flex;
+        padding-top: 1.5%;
+        
+
+        .button {
+            height: 80%;
+            width: 20%;
+            border-radius: 10px;
+            font-family: @bebas;
+            font-size: 3.0rem;
+            border: 4px double @mermaidblue;
+            cursor: pointer;
+            background-color: @mermaidblue;
+            animation-name: button-colors;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;          
+            
+        }
+    }
+    .address-row {
+        height: 20%;
+        padding-top: 0.5%;
+        color: @mermaidblue;
+        text-align: center;
+        font-size: 2.0rem;
+    }
+
+
+}
+
+
+/* KEY FRAMES */
+
+@keyframes button-colors {
+    50% {
+       background-color: @lilac; 
+    }
+    80% {
+        background-color: @papaya;
+    }
+}
