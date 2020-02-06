@@ -8,7 +8,6 @@
         
     .navigation {
         display: flex;
-        // border: 1px red solid;
         flex-direction: row;
         justify-content: space-evenly;
         padding-top: 3%;
@@ -23,6 +22,17 @@
             animation-name: anchor-colors;
             animation-duration: 5s;
             animation-iteration-count: infinite;
+            display: block;
+            width: 120px;
+            text-align: center;
+            transition: border-bottom 0.2s ease-in;
+            border-radius: 8px;
+            
+
+            &:hover {                  
+                border-bottom: 4px @mermaidblue solid;
+                color: black;
+            }
 
         }
     }
