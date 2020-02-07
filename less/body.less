@@ -1,7 +1,11 @@
 .body-container {
     margin-top: 1%;
     width: 100%;
-    height: 1000px;
+    height: 1000px;    
+
+    @media @mobile {
+        padding-top: 5%;
+    }
 
     
     .floating-div-container {
@@ -57,6 +61,10 @@
                 @media @tablet {
                     font-size: 4.6rem;
                 } /* MEDIA */
+
+                @media @mobile {
+                    font-size: 3.3rem;
+                } // MEDIA
             } /* END SUBHEADING */
 
             .body-p {
@@ -69,6 +77,10 @@
                     font-size: 2.5rem;
                     font-weight: bolder;
                 } /* MEDIA */
+
+                @media @mobile {
+                    font-size: 1.8rem;
+                }
             } /*END BODY P */ 
         } /* END FLOATING DIV */
 

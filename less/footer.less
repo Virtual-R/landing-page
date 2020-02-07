@@ -23,20 +23,32 @@
             background-color: @mermaidblue;
             animation-name: button-colors;
             animation-duration: 5s;
-            animation-iteration-count: infinite;          
+            animation-iteration-count: infinite;
+            @media @tablet {
+                width: 40%;
+            }         
             
-        }
-    }
+            @media @mobile {
+                width: 40%;
+                margin-top: 3%;              
+            } // Media 
+        } // End Button
+    } // End APP Button Div
+
     .address-row {
         height: 20%;
         padding-top: 0.5%;
         color: @mermaidblue;
         text-align: center;
         font-size: 2.0rem;
-    }
+
+        @media @mobile {
+            padding-bottom: 5%;
+        } // END MEDIA
+    } // END Adress  Row
 
 
-}
+} // END Footer
 
 
 /* KEY FRAMES */
