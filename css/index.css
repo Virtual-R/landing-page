@@ -16,6 +16,7 @@ papaya - 244 156 120
 */
 /* FONT VARIABLES */
 /* COLOR VARIABLES */
+/*MEDIA QUERY VARIABLES */
 * {
   margin: 0;
   padding: 0;
@@ -69,13 +70,19 @@ html {
   margin-top: 1%;
   width: 100%;
   height: 1000px;
+  /* END FLOATING DIV CONTAINER */
 }
 .body-container .floating-div-container {
   display: flex;
   flex-direction: column;
-  /* 1500px height before */
   height: 175vh;
   margin: 0% 5%;
+  /* END FLOATING DIV ROW */
+  /* END IMAGE CONTAINER */
+  /* END FLOATING DIV */
+  /* END */
+  /* END */
+  /* END */
 }
 .body-container .floating-div-container .floating-div-row {
   height: 33.3%;
@@ -87,6 +94,15 @@ html {
   /* padding-top: 5%; */
   position: relative;
   display: flex;
+  /* MEDIA */
+  /* END PUSHING RIGHT */
+  /* END PUSHING LEFT */
+}
+@media (max-width: 1000px) {
+  .body-container .floating-div-container .image-container {
+    display: none;
+    width: 0;
+  }
 }
 .body-container .floating-div-container .image-container #pushing-right {
   align-items: center;
@@ -99,18 +115,40 @@ html {
 .body-container .floating-div-container .floating-div {
   width: 80%;
   padding: 5%;
+  /* MEDIA */
+  /* END SUBHEADING */
+  /*END BODY P */
+}
+@media (max-width: 1000px) {
+  .body-container .floating-div-container .floating-div {
+    width: 100%;
+    margin-bottom: 3%;
+  }
 }
 .body-container .floating-div-container .floating-div .subheading {
   font-size: 7rem;
   background-color: transparent;
   font-family: 'Bangers', cursive;
   text-align: center;
+  /* MEDIA */
+}
+@media (max-width: 1000px) {
+  .body-container .floating-div-container .floating-div .subheading {
+    font-size: 4.6rem;
+  }
 }
 .body-container .floating-div-container .floating-div .body-p {
   font-size: 2.8rem;
   background-color: transparent;
   font-family: 'Poppins', sans-serif;
   padding-top: 2%;
+  /* MEDIA */
+}
+@media (max-width: 1000px) {
+  .body-container .floating-div-container .floating-div .body-p {
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
 }
 .body-container .floating-div-container .sixr-logo {
   font-weight: 900;
@@ -127,6 +165,7 @@ html {
 .body-container .floating-div-container #floatingdiv3 {
   background-color: #f49c78;
 }
+/* END BODY CONTAINER */
 /* KEY FRAMES */
 @keyframes logo-animation {
   50% {
@@ -220,9 +259,20 @@ html {
 .body-wrapper .content-wrapper .image-wrapper {
   width: 50%;
 }
+@media (max-width: 1000px) {
+  .body-wrapper .content-wrapper .image-wrapper {
+    display: none;
+    width: 0%;
+  }
+}
 .body-wrapper .content-wrapper .image-wrapper .form-girl {
   width: 100%;
   padding-top: 10%;
+}
+@media (max-width: 1000px) {
+  .body-wrapper .content-wrapper .image-wrapper .form-girl {
+    display: none;
+  }
 }
 .body-wrapper .content-wrapper .form-wrapper {
   width: 50%;
@@ -232,6 +282,13 @@ html {
   align-items: middle;
   border-right: 2px inset #40d1fd;
   text-align: center;
+}
+@media (max-width: 1000px) {
+  .body-wrapper .content-wrapper .form-wrapper {
+    width: 100%;
+    border-left: 2px solid #40d1fd;
+    border-righT: 2px solid #40d1fd;
+  }
 }
 .body-wrapper .content-wrapper .form-wrapper #message-text {
   height: 20%;
@@ -249,6 +306,11 @@ html {
   height: 50px;
   margin-bottom: 10px;
   border-radius: 5px;
+}
+@media (max-width: 1000px) {
+  .body-wrapper .content-wrapper .form-wrapper input {
+    width: 75%;
+  }
 }
 .body-wrapper .content-wrapper .form-wrapper #submit {
   margin-top: 3%;
@@ -276,4 +338,9 @@ html {
   color: #40d1fd;
   font-size: 2rem;
   margin-bottom: 3%;
+}
+@media (max-width: 1000px) {
+  .contact-footer {
+    font-weight: bolder;
+  }
 }
