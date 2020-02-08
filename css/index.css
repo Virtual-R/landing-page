@@ -149,6 +149,7 @@ nav label.logo {
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
+  text-shadow: 4px 4px #000000;
 }
 nav ul {
   float: right;
@@ -206,6 +207,7 @@ nav ul li a:hover {
     left: -100%;
     text-align: center;
     transition: all 0.5s;
+    z-index: 2;
   }
   nav ul li {
     display: block;
@@ -311,6 +313,7 @@ section div.wrapper a {
   padding-top: 15px;
   padding-left: 40px;
   text-shadow: 4px 4px #000000;
+  z-index: 0;
 }
 .btn::before,
 .btn::after {
@@ -395,6 +398,7 @@ div.content-wrapper {
   min-width: 20.5rem;
   max-width: 30.5rem;
   box-shadow: 2px 2px;
+  height: fit-content;
   margin: 2%;
   padding: 1%;
 }
