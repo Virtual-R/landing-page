@@ -96,7 +96,6 @@ html {
 }
 .body-container .floating-div-container .image-container {
   width: 20%;
-  /* padding-top: 5%; */
   position: relative;
   display: flex;
   /* MEDIA */
@@ -119,7 +118,7 @@ html {
 }
 .body-container .floating-div-container .floating-div {
   width: 80%;
-  padding: 4%;
+  padding: 3%;
   /* MEDIA */
   /* END SUBHEADING */
   /*END BODY P */
@@ -148,25 +147,24 @@ html {
   }
 }
 .body-container .floating-div-container .floating-div .body-p {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   background-color: transparent;
   font-family: 'Poppins', sans-serif;
   /* MEDIA */
 }
 @media (max-width: 1000px) {
   .body-container .floating-div-container .floating-div .body-p {
-    font-size: 2.5rem;
-    font-weight: bolder;
+    font-size: 2.3rem;
   }
 }
 @media (max-width: 750px) {
   .body-container .floating-div-container .floating-div .body-p {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 500px) {
   .body-container .floating-div-container .floating-div .body-p {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
 .body-container .floating-div-container .sixr-logo {
@@ -290,7 +288,7 @@ html {
   flex-direction: row;
   margin: 0 auto;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 9%;
 }
 .body-wrapper .content-wrapper .image-wrapper {
   width: 50%;
@@ -378,5 +376,6 @@ html {
 @media (max-width: 1000px) {
   .contact-footer {
     font-weight: bolder;
+    margin-top: 9%;
   }
 }
