@@ -170,7 +170,7 @@ nav ul li a {
 nav ul li a.active,
 nav ul li a:hover {
   background: #faf173;
-  color: #0364adee;
+  color: white;
   transition: 0.5s;
 }
 .checkbtn {
@@ -219,7 +219,6 @@ nav ul li a:hover {
   }
   a:hover,
   a.active {
-    background: none;
     color: #0364adee;
   }
   #check:checked ~ ul {
@@ -293,51 +292,12 @@ section div.wrapper {
 @media (max-width: 858px) {
   section div.wrapper {
     height: fit-content;
+    padding: 2%;
   }
 }
 section div.wrapper a {
   align-self: center;
   margin-top: 5%;
-}
-.btn {
-  width: 12.5rem;
-  height: 3.75rem;
-  font-weight: bold;
-  background: none;
-  border: 4px solid;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-  margin: 2%;
-  position: relative;
-  padding-top: 15px;
-  padding-left: 40px;
-  text-shadow: 4px 4px #000000;
-  z-index: 0;
-}
-.btn::before,
-.btn::after {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 4px;
-  background: #353b48;
-  transform: skewX(50deg);
-  transition: 0.4s linear;
-}
-.btn::before {
-  top: -4px;
-  left: 10%;
-}
-.btn::after {
-  bottom: -4px;
-  right: 10%;
-}
-.btn:hover::before {
-  left: 80%;
-}
-.btn:hover::after {
-  right: 80%;
 }
 div.staff {
   display: grid;
@@ -420,5 +380,67 @@ section.staff {
 @media (max-width: 858px) {
   section.staff {
     height: auto;
+  }
+}
+.btn {
+  width: 12.5rem;
+  height: 3.75rem;
+  font-weight: bold;
+  background: none;
+  border: 4px solid;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 2%;
+  position: relative;
+  padding-top: 15px;
+  padding-left: 40px;
+  text-shadow: 4px 4px #000000;
+  z-index: 0;
+}
+@media (max-width: 858px) {
+  .btn {
+    display: none;
+  }
+}
+.btn::before,
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: #353b48;
+  transform: skewX(50deg);
+  transition: 0.4s linear;
+}
+.btn::before {
+  top: -4px;
+  left: 10%;
+}
+.btn::after {
+  bottom: -4px;
+  right: 10%;
+}
+.btn:hover::before {
+  left: 80%;
+}
+.btn:hover::after {
+  right: 80%;
+}
+.mobilebtn {
+  display: none;
+}
+@media (max-width: 858px) {
+  .mobilebtn {
+    display: flex;
+    color: #0364adee;
+    background-color: white;
+    margin: 2%;
+    padding: 4%;
+    border-radius: 5px;
+    text-shadow: 1px 1px #000000;
+  }
+  .mobilebtn a:hover {
+    color: red;
   }
 }
